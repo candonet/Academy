@@ -1,0 +1,167 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Member.master.cs" Inherits="Member_Member" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="image/jquery.cleditor.css" />
+    <script type="text/javascript" src="image/jquery.min.js"></script>
+    <script type="text/javascript" src="image/jquery.js"></script>
+    <script type="text/javascript" src="image/jjquery.cleditor.js"></script>
+    <script type="text/javascript" src="image/jquery.cleditor.min.js"></script>
+    <script type="text/javascript" src="image/jquery.cleditor.table.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="image/style.css">
+
+<script type="text/javascript" src="image/jquery.flot.js"></script>
+<script type="text/javascript" src="image/doc.js"></script>
+    <style type="text/css">
+        input[type="submit"]
+        {
+            vertical-align: middle;
+            font-family: Tahoma;
+            border: 1px #bbb solid;
+            font-size: 11px;
+            padding: 5px;
+            color: black;
+            background-color: #bbb;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        input[disabled="disabled"]
+        {
+            vertical-align: middle;
+            font-family: Tahoma;
+            border: 1px #bbb solid;
+            font-size: 11px;
+            padding: 5px;
+            color: black;
+            background-color: #dedada;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        input[type="submit"]:hover
+        {
+            -moz-transition:all 200ms linear 0s;
+			-webkit-transition:all 200ms linear 0s;
+			-o-transition:all 200ms linear 0s;
+			-ms-transition:all 200ms linear 0s;
+            background-color: #dedada;
+        }
+        input[type="text"], select, textarea
+        {
+            vertical-align: middle;
+            font-family: Tahoma;
+            border: 1px #bbb solid;
+            font-size: 11px;
+            padding: 5px;
+            color: #777;
+            background-color: white;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+<div class="body_style">
+	<div class="menu">
+    <a href="/" class="logo" target="_blank"></a>
+    </div>
+	<div class="nav">
+    	<ul>
+        	<li class="active">
+            	<div class="fix">
+                    <span class="ico"><img src="image/ico1.png"/></span>
+                    <span class="value">مدیریت</span>
+                </div>
+                <ul>
+                	<li><a href="AddTour.aspx">مدیریت تورها</a></li>
+                    <li><a href="AddHotel.aspx">مدیریت هتل ها</a></li>
+                </ul>
+             </li>
+            <li>
+            <div class="fix">
+                <span class="ico"><img src="image/ico3.png"/></span>
+                <span class="value">مدیریت مالی</span>
+            </div>
+                <ul>
+                	<li><a href="#">واریزی ها</a></li>
+                    <li><a href="#">گزارش هفته</a></li>
+                    <li><a href="#">گزارش ماه</a></li>
+                    <li><a href="#">گزارش سالانه</a></li>
+                </ul>
+            </li>
+            <li style="display:none">
+            <div class="fix">
+                <span class="ico"><img src="image/ico4.png"/></span>
+                <span class="value">بخش گزارش ها</span>
+            </div>
+                <ul>
+                	<li><a href="#">بازدید از تورها</a></li>
+                    <li><a href="#">نظرات</a></li>
+                </ul>
+            </li>
+            <li>
+            <div class="fix">
+                 <span class="ico"><img src="image/ico5.png"/></span>
+                <span class="value">پیام ها</span>
+            </div>
+                <ul>
+                	<li><a href="Submitticket.aspx">ارسال درخواست</a></li>
+                    <li><a href="supportticket.aspx">لیست درخواست ها</a></li>
+                </ul>
+            </li>
+            <li onclick="window.location =  '/' + '?action=logout'">
+			<div class="fix">
+                <span class="ico"><img src="image/ico8.png"/></span>
+                <span class="value">خروج</span>
+            </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="content">
+    
+    <ul data-collapse="collapse" class="quick">
+        
+		<li>
+            <a href="Config.aspx">
+                <img alt="" src="image/my-account.png"/>
+                <span>ویرایش اطلاعات</span>
+            </a>
+        </li>
+        <li>
+            <a href="ChangePass.aspx">
+                <img alt="" src="image/lock.png"/>
+                <span>تغییر رمز</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img alt="" src="image/refresh.png"/>
+                <span>بازخوانی صفحه</span>
+            </a>
+        </li>
+    </ul>
+    
+	<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+    </asp:ContentPlaceHolder>
+	
+
+	</div>
+
+    
+</div>
+
+</body>
+</html>

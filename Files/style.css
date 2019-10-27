@@ -1,0 +1,494 @@
+@font-face {
+    font-family: "BYekan";
+    src: url("../Files/fonts/BYekan.eot?#") format("eot"), url("../Files/fonts/BYekan.woff") format("woff"), url("../Files/fonts/BYekan.ttf") format("truetype");
+}
+@font-face {
+    font-family: "B Yekan";
+    src: url("../Files/fonts/BYekan.eot?#") format("eot"), url("../Files/fonts/BYekan.woff") format("woff"), url("../Files/fonts/BYekan.ttf") format("truetype");
+}
+body
+{
+   
+
+   background-position:right bottom;
+   background-attachment: fixed;
+   
+   padding: 0;
+   margin:0;
+}
+
+.BB
+{
+   background: url('../images/tree.png') no-repeat fixed,url('../images/grass-rock.png') no-repeat fixed;
+   background: url('../images/tree.png') no-repeat ,url('../images/grass-rock.png') no-repeat;
+   -svg-background: url('../images/tree.png') no-repeat, url('../images/grass-rock.png') no-repeat;
+   background-position:right bottom;
+   background-attachment: fixed;
+   
+   padding: 0;
+   margin:0;
+}
+/*---------------------------- Footer ----------------------------*/
+.footerBlock
+{
+    text-align:center;
+    width:100%;
+    height:30px;
+    background-color:#ddd;
+    border-top:solid;
+    background-position-y:bottom;
+    border-width:4px;
+    border-color:#cbcbcb;
+    bottom:0px;
+    position:relative;
+    font-family:"BYekan";
+    padding-top:30px;
+    padding-bottom:30px;
+    min-width:1180px;
+}
+.footer {
+
+	padding-top:0px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+    margin-top:0px;
+	text-align:center;
+	width:100%;
+	float:right;
+	color:#888;
+	line-height:30px;
+	text-shadow:1px 1px 0px #fff;
+    background-position-y:bottom;
+}
+.TitleBar
+{
+    text-align:right;
+    font:18px BYekan;
+	padding:5px;
+	margin:10px 2px;
+	color:#272626;
+	cursor:default;
+    border-bottom:dotted;
+    border-color:#6e1c82;
+    font-weight: normal;
+}
+.TitleHR
+{
+    
+ 
+    
+}
+.TitleLeftBar
+{
+    font-size:x-large;
+    text-align:center;
+    font-family:'BYekan';
+    font-size:18px;
+    background-color:#6e1c82;
+    color:white;
+    height:35px;
+}
+.footer a {
+	color:#333;
+}
+
+.footer a:hover {
+	color:#ff5500;
+}
+
+.footermenu {
+	font-family:BYekan;
+	font-size:18px;
+	
+}
+
+.footermenu a {
+
+}
+.center {
+	width:100%;
+
+    background-color:#bbb
+}
+/*---------------------------- End of Footer ----------------------------*/
+.img.airplane {
+    background-image: url('../images/airplane.png');
+    background-repeat: no-repeat;
+    width: 328px;
+    height: 82px;
+    left:120px;
+    top: 70px;
+    z-index: 2;
+    position: absolute;
+}
+.img.tree {
+    background-image: url('../images/tree.png');
+    background-repeat: no-repeat;
+    width: 193px;
+    height: 280px;
+    bottom: 27px;
+    right: 10px;
+    z-index: 2;
+    position: fixed;
+}
+.img.cloud-1 {
+    background-image: url('../images/cloud-1.png');
+    background-repeat: no-repeat;
+    width: 328px;
+    height: 82px;
+    top: 150px;
+    z-index: 2;
+    left:10px;
+    position: absolute;
+}
+.img.cloud-2 {
+    background-image: url('../images/cloud-2.png');
+    background-repeat: no-repeat;
+    width: 328px;
+    height: 82px;
+    top: 100px;
+    right: 0;
+    z-index: 2;
+    position: absolute;
+}
+.img.grass-rock {
+    background-image: url('../images/grass-rock.png');
+    background-repeat: no-repeat;
+    width: 234px;
+    height: 52px;
+    bottom: 0px;
+    right: 0;
+    z-index: 2;
+    position: fixed;
+}
+#container {
+	margin-top: 0px;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.GrayTable
+{
+    font-family:Tahoma;
+    width:100%;
+    background-color: #f8f7f7;
+    border: 1px solid #CCCCCC;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    
+}
+.LabelValid
+{
+    visibility: hidden;
+}
+.MyBtn
+{
+    vertical-align: middle;
+    font-family: Tahoma;
+    border: 1px #bbb solid;
+    font-size: 11px;
+    padding: 5px;
+    color: #f3f3f3;
+    
+    background-color: #777;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.myTxt
+{
+    color: #777;
+    font-family: Tahoma;
+    font-size: 12px;
+    width:180px;
+    height:20px;
+}
+	.NewsTag
+	{
+		-moz-transition:all 200ms linear 0s;
+		-webkit-transition:all 200ms linear 0s;
+		-o-transition:all 200ms linear 0s;
+		-ms-transition:all 200ms linear 0s;
+		border-bottom:solid 1px #bbb;
+		padding-top:5px;
+		padding-bottom:5px;
+		font-size:13px;
+		color:#4e4e4e;
+		cursor:pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+        font-family:'BYekan';
+        font-weight:normal;
+	}
+	.NewsTag:hover
+	{
+		-moz-transition:all 200ms linear 0s;
+		-webkit-transition:all 200ms linear 0s;
+		-o-transition:all 200ms linear 0s;
+		-ms-transition:all 200ms linear 0s;
+		color:black;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+.MarkSite
+{
+    min-width:1180px;
+    width:100%;
+    background-image:url('../images/logo.png');
+    background-repeat:no-repeat;
+    background-position: right;
+    height:110px;
+    
+        
+}
+.NewsBox
+{
+    -moz-transition:all 200ms linear 0s;
+	-webkit-transition:all 200ms linear 0s;
+	-o-transition:all 200ms linear 0s;
+	-ms-transition:all 200ms linear 0s;
+    width: 94%;
+    background-color: white;
+    opacity: 1;
+    font-family: 'BYekan';
+    border-collapse: collapse;
+    margin:5px;
+    height:130px;
+    padding-right:60px;
+    text-align:right;
+    left:0px;
+    direction:rtl;
+}
+    .NewsBox:hover
+    {
+        -moz-transition:all 200ms linear 0s;
+		-webkit-transition:all 200ms linear 0s;
+		-o-transition:all 200ms linear 0s;
+		-ms-transition:all 200ms linear 0s;
+        box-shadow: 0px 0px 5px #888888;
+    }
+    .NewsBox2
+{
+    -moz-transition:all 200ms linear 0s;
+	-webkit-transition:all 200ms linear 0s;
+	-o-transition:all 200ms linear 0s;
+	-ms-transition:all 200ms linear 0s;
+    width: 98%;
+    background-color: white;
+    opacity: 1;
+    font-family: 'BYekan';
+    border-collapse: collapse;
+    margin:5px;
+    height:130px;
+    padding-right:60px;
+    text-align:right;
+    left:0px;
+    direction:rtl;
+}
+    .NewsBox2:hover
+    {
+        -moz-transition:all 200ms linear 0s;
+		-webkit-transition:all 200ms linear 0s;
+		-o-transition:all 200ms linear 0s;
+		-ms-transition:all 200ms linear 0s;
+        box-shadow: 0px 0px 5px #888888;
+    }
+.TableHeaders
+{
+    background-color: #6e1c82;
+    padding-right: 5px;
+    color:white;
+}
+.TourAds
+{
+    font-family:'BYekan';
+	width:100%;
+	height:100px;
+	border-bottom:solid 1px #bbb;
+	border-collapse: collapse;
+    cursor:pointer;
+}
+.TourAdsDiv1
+{
+	font-size:12.5px;
+}
+.TourAdsDiv1:hover
+{
+	color:#5faaf3;
+}
+.TourAdsDiv2
+{
+	font-size:12.5px;
+	color:gray;
+}
+.TourAdsDiv3
+{
+	font-size:12.5px;
+	color:#365df3;
+}
+.LoginMenuBTN
+{
+    float: left;
+    position: relative;
+    border-right: solid 1px #1e1e1e;
+    font-family:'BYekan';
+    font-size:14.5px;
+    color:white;
+}
+.h2Tag
+{
+    font-family:'BYekan';
+    color:#5faaf3;
+    width:100%;
+    background-color:#f3f1f1;
+    border-right:solid 4px #5faaf3;
+    font-size:18px;
+    font-weight:normal;
+    padding-right:10px;
+    line-height:35px;
+}
+.LoginError
+{
+    font-family:'BYekan';
+    width:400px;
+    background-color:#ffd3d3;
+    border:solid 3px #ff6363;
+    padding:10px;
+    padding-right:50px;
+    border-radius:5px;
+    background-image:url('../images/notice-alert.png');
+    background-position:right;
+    background-repeat:no-repeat;
+    color:#b91d1d;
+}
+.RegSuccess
+{
+    font-family:'BYekan';
+    width:400px;
+    background-color:#e9fae4;
+    border:solid 3px #64b12f;
+    padding:10px;
+    padding-right:50px;
+    border-radius:5px;
+    background-image:url('../images/Mail_verified.png');
+    background-position:right;
+    background-repeat:no-repeat;
+    color:#6d903f;
+}
+.NewsSuccess
+{
+    font-family:'BYekan';
+    width:400px;
+    background-color:#e9fae4;
+    border:solid 3px #64b12f;
+    padding:10px;
+    padding-right:50px;
+    border-radius:5px;
+    background-position:right;
+    background-repeat:no-repeat;
+    color:#6d903f;
+    background-image:url('../images/ok.png');
+}
+.MainInfo1
+{
+	border-collapse: collapse;
+	width:100%;
+}
+.MainInfo2
+{
+	border-collapse: collapse;
+	font-family:'BYekan';
+	padding:24px;
+	border:solid 1px black;
+	width:100%;
+	font-weight:normal;
+	font-size:14px;
+	border-color:#bbb;
+}
+.MainInfo2  tr  td
+{
+	border-color:#bbb;
+	padding:4px;
+	color:#454444;
+}
+.tr1
+{
+	background-color:#e6e6e6;
+}
+.tr2
+{
+	background-color:white;
+}
+.ProgressSuccess
+{
+    font-family:'BYekan';
+    width:400px;
+    background-color:#f9fff6;
+    border:solid 3px #64b12f;
+    padding:10px;
+    padding-right:50px;
+    border-radius:5px;
+    background-image: url('../images/ok.png');
+    background-position:right;
+    background-repeat:no-repeat;
+    color:#6d903f;
+}
+.DataPagerBTN
+{
+    border:1px solid #c3c2c2;
+    background-color:#ededed;
+    font-family:'Arial';
+    display:inline-block;
+    width:25px;
+    font-weight:800;
+    color:gray;
+    font-size:12.5px;
+    text-align:center;
+    box-shadow: 1px 2px 2px #888888;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+.DataPagerBTN:active
+{
+    box-shadow: 0px 0px 0px #888888;    
+}
+.DataPagerBTNSLC
+{
+    border:1px solid #c3c2c2;
+    background-color:#ededed;
+    font-family:'Arial';
+    display:inline-block;
+    width:25px;
+    font-weight:800;
+    color:gray;
+    font-size:12.5px;
+    text-align:center;
+    box-shadow: 0px 0px 0px #888888;   
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+.NewsLinks
+{
+    text-decoration: none;
+    color: #902070;
+    font-size: 14px;
+}

@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="shortcut icon" href="/images/icon.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="fa-ir">
+        <link rel="stylesheet" type="text/css" media="all" href="/Files/Horizstyles.css" />
+        <link href="/Files/SlideShow.css" type="text/css" media="all" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="/Files/menucss.css" />
+        <link rel="stylesheet" type="text/css" href="/Files/style.css" />
+        <link href="/Files/skitter.styles.min.css" type="text/css" media="all" rel="stylesheet" />
+        <link href="/Files/tabs.css" type="text/css" media="all" rel="stylesheet" />
+        <link href="/Files/skitter.styles.css" type="text/css" media="all" rel="stylesheet" />
+        <link href="/Files/Menu2.css" type="text/css" media="all" rel="stylesheet" />
+    <script type="text/javascript" lang="javascript" src="/Js/jquery-2.1.1.min.js"></script>    
+    <script type="text/javascript" lang="javascript" src="/Js/jquery-1.11.0.min.js"></script>
+        
+        <script type="text/javascript" lang="javascript" src="/Js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" lang="javascript" src="/Js/jquery.skitter.js"></script>
+        <script type="text/javascript" src="/Js/responsiveCarousel.min.js"></script>
+        <script type="text/javascript" src="/Js/jQueryCenterSlide.js"></script>
+        <script type="text/javascript" src="/Js/html5placeholder.jquery.min.js"></script>    
+        <script type="text/javascript" src="/Files/master.js"></script>
+	<!-- Initialise jQuery Library -->
+
+	<!-- Initialise html5 placeholder -->
+
+      <asp:ContentPlaceHolder id="head" runat="server">
+      
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    
+        <div class="MarkSite" id="MarkSite" runat="server"></div>
+            <div>
+                <div id="container" style="height:37px;min-width:1180px" runat="server"> <!--/ container used for Menu--> 
+            
+                </div><!--/ container--> 
+                
+                <br />
+                <br />
+    <center>
+    <table id="tblMaster" dir="ltr" style="width:1180px;border-collapse:collapse;">
+         <tr>
+             <td valign="top">
+                <table  dir="rtl" style="margin-left:5px;width:910px">
+                        <tr>
+                            <td align="right" style="font-size:13px;vertical-align:top">
+                                <div id="page1" runat="server"><!--/ used for SlideShow--> 
+                                    <div id="content" runat ="server" style="width:900px;">
+
+                                    </div>
+                                </div><!--/ End of SlideShow--> 
+                            <div id="HorSlide" runat="server">
+                                <center>
+                                    <div id="w" runat="server" style="direction:ltr">
+    
+                                    </div><!-- @end #w -->
+                                </center>
+                                  <nav class="slidernav divNav" style="direction:ltr">
+                                      <div id="navbtns" class="clearfix divNav">
+                                        <a href="#" id="NextBTN" class="previous divNav"></a>
+                                        
+                                      </div>
+                                 </nav>
+                            </div>
+                            <script type="text/javascript">
+                               
+                            </script>
+                            <form id="form1" runat="server">
+                            <div>
+                                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+             </td>
+             <td style="width:250px" valign="top">
+                <table dir="rtl">
+                    <tr>
+                        <td class="TitleLeftBar">
+
+                             تبلیغات
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;padding-top:10px;">
+                            <center>
+                                <asp:DataList ID="DataList2" runat="server">
+                                    <ItemTemplate>
+                                        <center>
+                                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("URL") %>' Target="_blank" >
+                                                <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("ImageADR") %>' AlternateText='<%# Eval("KeyW") %>'></asp:Image>
+                                            </asp:HyperLink>
+                                        </center>
+                                    </ItemTemplate>
+                                </asp:DataList>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr id="NewsHeader" runat="server" visible="false">
+                        <td class="TitleLeftBar">
+                            <a href="/خبرها" style="text-decoration:none;color:white"> آخرین اخبار</a>
+                        </td>
+                    </tr>
+                    <tr id="NewsBody" runat="server" visible="false">
+                        <td style="text-align:right;padding-top:10px;">
+                            <asp:DataList ID="DataList1" runat="server" Width="100%">
+                                <ItemTemplate>
+                                    <table style="width:100%">
+		                                <tr>
+			                                <td class="NewsTag" onClick="window.location='<%# Eval("NewsProfile","/News/{0}") %>';">
+				                                <%# Eval("Title") %>
+			                                </td>
+		                                </tr>
+	                                </table>
+                                </ItemTemplate>
+
+                            </asp:DataList>
+
+                        </td>
+                    </tr>
+                    <tr runat="server" id="TOURVIZ">
+                        <td class="TitleLeftBar">
+                            <a style="text-decoration:none;color:white"> تور های ویژه</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;padding-top:10px;">
+                            <asp:DataList ID="DataList3" runat="server" Width="100%" OnItemDataBound="DataList3_ItemDataBound">
+                                <ItemTemplate>
+                                    <table class="TourAds" onClick="window.location='<%# Eval("TourProfile","/Tours/{0}") %>';">
+	                                    <tr>
+		                                    <td style="width:81px;vertical-align:top">
+		                                    <asp:Image ID="Image2" runat="server" ImageUrl='<%# Eval("TourICO") %>' Height="80px" Width="80px"></asp:Image>
+		                                    </td>
+		                                    <td style="text-align:right;padding-right:5px;vertical-align:top">
+		                                    <div class="TourAdsDiv1"><asp:Label ID="Label1" runat="server" Text='<%# Eval("Title") %>'></asp:Label></div>
+		                                    <div class="TourAdsDiv2">
+                                                <asp:Label ID="Label2" runat="server" Text='<%# Eval("Kind") %>'></asp:Label>
+                                                <asp:Label ID="Label4" runat="server" Text='<%# Eval("nam") %>'></asp:Label>
+		                                    </div>
+		                                    <div class="TourAdsDiv3"><asp:Label ID="Label3" runat="server" Text='<%# Eval("Qeimat") %>' class="NewsLinks"></asp:Label></div>
+		                                    </td>
+	                                    <tr>
+                                    </table>
+                                </ItemTemplate>
+
+                            </asp:DataList>
+
+                        </td>
+                    </tr>
+                    
+                    <tr id="Tr2" runat="server">
+                        <td style="text-align:center;padding-top:10px;">
+                            <img id='nbqewlaonbqeoeukfukz' style='cursor:pointer' onclick='window.open("http://logo.samandehi.ir/Verify.aspx?id=24286&p=uiwkaodsuiwkmcsigvka", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30")' alt='logo-samandehi' src='http://logo.samandehi.ir/logo.aspx?id=24286&p=odrfshwlodrfaqgwwlbq'/>
+
+                        </td>
+                    </tr>
+                </table>
+             </td>
+         </tr>
+         </table>
+                
+                
+         
+     </center>
+    <br /><br />
+                
+            </div>
+                <br /><br />
+            <div class="footerBlock">
+                
+                کليه حقوق اين وب سايت محفوظ مي باشد<br />
+Copyright © 2015 - All rights reserved
+            </div>
+       
+    </form>
+</body>
+</html>

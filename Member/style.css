@@ -1,0 +1,84 @@
+body {
+	background-color:#333;
+	background-image:url(bg1.png);
+	background-repeat:repeat;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	color:#333;
+	line-height:18px;
+	margin:0;
+	padding:0;
+}
+a {
+	text-decoration:none;
+}
+.clear {
+	clear:both;
+}
+h1,h2,h3 {
+	font-size:12px;
+}
+
+/*input , select , textarea {
+	vertical-align:		middle; 
+	font-family:		Tahoma;
+	border:				1px #bbb solid;
+	font-size:			11px;
+	padding:			5px;
+	color:				#777;
+	background-color:	white;
+    border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+    text-align: center;
+}*/
+/*Login Page CSS*/
+.login
+{
+	width:455px;
+	background-color:White;
+	border: 1px solid #666666;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+	-moz-box-shadow:    3px 3px 5px 6px #808080;
+	-webkit-box-shadow: 3px 3px 5px 6px #808080;
+	box-shadow:         3px 3px 5px 6px #808080;
+}
+#lock {
+	background: url("../Files/login_lock.png") 50% 0 no-repeat;
+	width: 150px;
+	height: 137px;
+        }
+.ErrorMsg
+{
+	display:none;
+	border-top: 4px solid #F26269;
+	border-bottom:4px solid #F26269;
+	background-color:#FBC6C9;
+    text-align:right;
+	height:30px;
+	width:100%;		
+}
+.InPutTable
+{
+	width: 100%;
+	background-color:#F0F5FF;
+	border: 1px solid #5891FA;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+}
+.style1
+{
+    border: 1px solid #c3c3c3;
+    width:100%;
+    background-color:White;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+}

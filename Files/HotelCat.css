@@ -1,0 +1,77 @@
+﻿@font-face {
+    font-family: "BYekan";
+    src: url("../Files/fonts/BYekan.eot?#") format("eot"), url("../Files/fonts/BYekan.woff") format("woff"), url("../Files/fonts/BYekan.ttf") format("truetype");
+}
+@font-face {
+    font-family: "B Yekan";
+    src: url("../Files/fonts/BYekan.eot?#") format("eot"), url("../Files/fonts/BYekan.woff") format("woff"), url("../Files/fonts/BYekan.ttf") format("truetype");
+}
+.TableStyle
+{
+	width:100%;
+	height:170px;
+	border-collapse: collapse;
+}
+.TableCells
+{
+	padding-right:5px;
+	padding-left:5px;
+	vertical-align:top;
+	text-align:right;
+}
+.TableImage
+{
+	vertical-align:top;
+	text-align:center;
+}
+.ImageStyle
+{
+	
+	max-width:150px;
+	max-height:170px;
+}
+.HotelName
+{
+	padding-top:10px;
+	font-family:"BYekan";
+	font-size:18px;
+}
+.AboutHotel
+{
+	font-family:"BYekan";
+	text-align:right;
+	direction:rtl;
+	font-size:14px;
+	padding-right:10px;
+	padding-left:10px;
+}
+.Taed
+{
+	font-family:"BYekan";
+	font-size:12px;
+	border:solid 1px green;
+	color:green;
+	margin-top:25px;
+	background-color:#ccf8ba;
+	width:150px;
+	float:right;
+	padding:5px;
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-bottom-right-radius:2px;
+}
+.MainTd
+{
+	border:solid 1px #C0C0C0;
+	margin:0;
+	padding:0;
+}
+.HotelLink
+{
+    color:#6e1c82;
+}
+.HotelLink:hover
+{
+    color:#0f78a5;
+}

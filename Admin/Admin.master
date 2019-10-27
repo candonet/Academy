@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="image/jquery.cleditor.css" />
+    <script type="text/javascript" src="image/jquery.min.js"></script>
+    <script type="text/javascript" src="image/jquery.js"></script>
+    <script type="text/javascript" src="image/jjquery.cleditor.js"></script>
+    <script type="text/javascript" src="image/jquery.cleditor.min.js"></script>
+    <script type="text/javascript" src="image/jquery.cleditor.table.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="image/style.css">
+
+<script type="text/javascript" src="image/jquery.flot.js"></script>
+<script type="text/javascript" src="image/doc.js"></script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+<div class="body_style">
+	<div class="menu">
+    <a href="/" class="logo" target="_blank"></a>
+    </div>
+	<div class="nav">
+    	<ul>
+        	<li class="active">
+            	<div class="fix">
+                    <span class="ico"><img src="image/ico1.png"></span>
+                    <span class="value">مدیریت</span>
+                </div>
+                <ul>
+                    <li><a href="AddHotel.aspx">مدیریت هتل ها</a></li>
+                    <li><a href="ManageItems.aspx">مدیریت امکانات هتل</a></li>
+                    <li><a href="AddCCA.aspx">مدیریت ناحیه</a></li>
+                    <li><a href="ManageNews.aspx">مدیریت اخبار</a></li>
+                    <li><a href="ManageJazebe.aspx">مدیریت جاذبه ها</a></li>
+                    <li><a href="AddTour.aspx">مدیریت تورها</a></li>
+                    <li><a href="ManageADS.aspx">مدیریت تبلیغات</a></li>
+                    <li><a href="ManageAdsTour.aspx">مدیریت تبلیغات تورها</a></li>
+                    <li><a href="ManageImages.aspx">مدیریت تصاویر</a></li>
+                    <li><a href="ManagePage.aspx">مدیریت صفحات</a></li>
+                </ul>
+             </li>
+            <li>
+            	<div class="fix">
+                    <span class="ico"><img src="image/ico2.png"></span>
+                    <span class="value">بخش کاربران</span>
+                </div>
+                <ul>
+                    <li><a href="ManageUsers.aspx">مدیریت کاربران</a></li>
+                    <li><a href="ManageAgency.aspx">مدیریت آژانس ها</a></li>
+                    <li><a href="#">مدیریت مدیران</a></li>
+                </ul>
+            </li>
+            <li>
+            <div class="fix">
+                <span class="ico"><img src="image/ico3.png"></span>
+                <span class="value">مدیریت مالی</span>
+            </div>
+                <ul>
+                	<li><a href="#">واریزی ها</a></li>
+                    <li><a href="#">گزارش هفته</a></li>
+                    <li><a href="#">گزارش ماه</a></li>
+                    <li><a href="#">گزارش سالانه</a></li>
+                </ul>
+            </li>
+            <li style="display:none">
+            <div class="fix">
+                <span class="ico"><img src="image/ico4.png"></span>
+                <span class="value">بخش گزارش ها</span>
+            </div>
+                <ul>
+                	<li><a href="#">بخش افزونه ها</a></li>
+                    <li><a href="#">بخش فیلد های خاص</a></li>
+                </ul>
+            </li>
+            <li>
+            <div class="fix">
+                 <span class="ico"><img src="image/ico5.png"></span>
+                <span class="value">پیام ها</span>
+            </div>
+                <ul>
+                	<li><a href="CheckHotelComment.aspx">نظرات هتل</a></li>
+                    <li><a href="AgencyComment.aspx">نظرات آژانس ها</a></li>
+                    <li><a href="CheckTourComment.aspx">نظرات تور ها</a></li>
+                </ul>
+            </li>
+            <li style="display:none">
+            <div class="fix">
+                 <span class="ico"><img src="image/ico6.png"></span>
+                <span class="value">تحلیل سیستم</span>
+            </div>
+            </li>
+            <li>
+            <div class="fix">
+                <span class="ico"><img src="image/ico7.png"></span>
+                <span class="value">منوی های ناوبری</span>
+            </div>
+                <ul>
+                	<li><a href="MenuEditor.aspx">مدیریت منو ها</a></li>
+                </ul>
+            </li>
+            <li onclick="window.location =  '/' + '?action=logout'">
+		    <div class="fix">
+                <span class="ico"><img src="image/ico8.png" /></span>
+                <span class="value">خروج</span>
+            </div>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+    <ul data-collapse="collapse" class="quick">
+        <li>
+            <a href="supportticket.aspx">
+                <img alt="" src="image/order-149.png">
+                <span>لیست درخواست ها</span>
+            </a>
+        </li>
+		<li>
+            <a href="Setting.aspx">
+                <img alt="" src="image/setting.png">
+                <span>تنظیمات</span>
+            </a>
+        </li>
+        <li>
+            <a href="WebStatus.aspx">
+                <img alt="" src="image/statistics.png">
+                <span>وضعیت سایت</span>
+            </a>
+        </li>
+        <li>
+            <a href="ChangePass.aspx">
+                <img alt="" src="image/lock.png">
+                <span>تغییر رمز</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img alt="" src="image/refresh.png">
+                <span>بازخوانی صفحه</span>
+            </a>
+        </li>
+    </ul>
+    
+	<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+    </asp:ContentPlaceHolder>
+	
+
+	</div>
+
+    
+</div>
+
+</body>
+</html>

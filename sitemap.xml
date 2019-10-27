@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <url>
+      <loc>Product 1</loc>
+      <priority>20%</priority>
+    </url>
+    <url>
+      <loc>Product 2</loc>
+      <priority>20%</priority>
+    </url>
+    <url>
+      <loc>Product 3</loc>
+      <priority>20%</priority>
+    </url>
+    <url>
+      <loc>Product 4</loc>
+      <priority>20%</priority>
+    </url>
+  </url>
+</urlset>
